@@ -64,7 +64,6 @@ services:
 
 | Tag | PHP Version |
 |-----|-------------|
-| `8.1` | PHP 8.1 |
 | `8.2` | PHP 8.2 |
 | `8.3` | PHP 8.3 |
 | `8.4`, `latest` | PHP 8.4 |

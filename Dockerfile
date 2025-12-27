@@ -18,6 +18,15 @@ RUN apk add --no-cache \
 
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
+RUN cat <<EOF > /usr/local/etc/php/conf.d/error-logging.ini
+[PHP]
+log_errors = On
+error_log = /proc/self/fd/2
+error_reporting = E_ALL
+display_errors = Off
+display_startup_errors = Off
+EOF
+
 WORKDIR /var/www/html
 
 RUN mkdir -p /data/caddy /config/caddy

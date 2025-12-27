@@ -32,6 +32,7 @@ USER www-data
 - Base: `dunglas/frankenphp:1-php{version}-alpine`
 - PHP Extensions: pdo_mysql, mbstring, exif, pcntl, bcmath, gd, zip
 - System packages: curl, libzip, libpng, libxml2, oniguruma, freetype, libjpeg-turbo
+- PHP error logging configured to stderr (visible via `docker logs`)
 
 ## Environment Variables
 
